@@ -26,6 +26,6 @@ redis:
 
 ```
 docker build --platform=linux/amd64 . -t redis -f ./redis/Dockerfile --force-rm
-docker tag redis:latest sangotech/redis:1.0.0
-docker push sangotech/redis:1.0.0
+docker tag redis:latest sangotech/redis:1.0.1
+docker push sangotech/redis:1.0.1
 ```
