@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  redis:
+    # build:
+    #   context: .
+    #   dockerfile: redis/Dockerfile
+    image: sangotech/redis:latest
+    privileged: true
+    command: sh -c "./init.sh"
+    volumes:
+      - ./data/redis:/data
+    ports:
+      - 6379:6379
